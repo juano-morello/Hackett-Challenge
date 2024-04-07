@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {MultiAxisLineChartComponent} from "./multi-axis-line-chart/multi-axis-line-chart.component";
+import {PieChartComponent} from "./pie-chart/pie-chart.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [MultiAxisLineChartComponent, PieChartComponent, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
