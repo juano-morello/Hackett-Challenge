@@ -55,7 +55,6 @@ export class PieChartComponent implements OnInit {
       type: 'pie',
       data: {
         datasets: [{
-          label: 'Car per household in USA 2021',
           data: carData,
           backgroundColor: [
             'rgba(255,99,132,0.2)',
@@ -82,10 +81,6 @@ export class PieChartComponent implements OnInit {
           legend: {
             position: 'top',
           },
-          title: {
-            display: true,
-            text: 'Car Ownership Distribution in the US for 2021'
-          }
         }
       }
     });

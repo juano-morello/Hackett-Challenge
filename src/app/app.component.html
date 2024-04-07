@@ -1,4 +1,71 @@
-<main class="main">
-  <app-pie-chart />
-  <app-multi-axis-line-chart />
-</main>
+<!--<main class="main">-->
+<!--  <app-pie-chart />-->
+<!--  <app-multi-axis-line-chart />-->
+<!--</main>-->
+
+<div class="container-fluid">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <img ngSrc="assets/logo.svg" alt="home" height="36" width="172">
+
+    <img ngSrc="assets/bell.svg" alt="home" height="24" width="24">
+  </div>
+  <div class="row">
+    <!-- Sidebar -->
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+
+            <a class="nav-link active" href="#">
+              <img ngSrc="assets/home.svg" alt="home" height="24" width="24">
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img ngSrc="assets/users.svg" alt="home" height="24" width="24">
+              Accounts
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img ngSrc="assets/sync.svg" alt="home" height="24" width="24">
+              Activities
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img ngSrc="assets/sign-out.svg" alt="home" height="24" width="24">
+              Sign Out
+            </a>
+          </li>
+          <!-- ...other items... -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+      <!-- Cards for Charts -->
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cars per household in USA 2021</h5>
+              <app-pie-chart />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Population of Alabama, Florida and California</h5>
+              <app-multi-axis-line-chart />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
