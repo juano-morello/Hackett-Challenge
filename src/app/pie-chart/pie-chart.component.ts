@@ -77,6 +77,8 @@ export class PieChartComponent implements OnInit {
       },
       options: {
         responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 2,
         plugins: {
           legend: {
             position: 'top',

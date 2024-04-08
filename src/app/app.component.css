@@ -1,0 +1,50 @@
+.main {
+  background-color: #EBF3FA;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  height: 90%;
+}
+
+.sidebar {
+  background-color: #E3EFF8 !important;
+}
+
+.main-row {
+  border-radius: 25px;
+}
+
+.card-row {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.no-border {
+  border: none;
+}
+
+.list-group-item-action.active {
+  color: #0F335B;
+  font-weight: bold;
+}
+
+.list-group-item-action {
+  color: #4D5358;
+  font-weight: lighter;
+}
+
+.vh-100 {
+  height: 85vh !important;
+}
+
+.card-text {
+  color: #4D5358;
+  font-weight: lighter;
+}
+
+.card-title {
+  color: #4D5358;
+  font-weight: bold;
+}

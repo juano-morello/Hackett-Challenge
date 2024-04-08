@@ -1,71 +1,56 @@
-<!--<main class="main">-->
-<!--  <app-pie-chart />-->
-<!--  <app-multi-axis-line-chart />-->
-<!--</main>-->
-
-<div class="container-fluid">
-  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+<div class="container-fluid main">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
     <img ngSrc="assets/logo.svg" alt="home" height="36" width="172">
 
     <img ngSrc="assets/bell.svg" alt="home" height="24" width="24">
   </div>
-  <div class="row">
-    <!-- Sidebar -->
-    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-      <div class="sidebar-sticky">
-        <ul class="nav flex-column">
-          <li class="nav-item">
+  <div class="row main-container">
+    <nav class="col-md-2 sidebar main-row">
 
-            <a class="nav-link active" href="#">
-              <img ngSrc="assets/home.svg" alt="home" height="24" width="24">
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <img ngSrc="assets/users.svg" alt="home" height="24" width="24">
-              Accounts
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <img ngSrc="assets/sync.svg" alt="home" height="24" width="24">
-              Activities
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <img ngSrc="assets/sign-out.svg" alt="home" height="24" width="24">
-              Sign Out
-            </a>
-          </li>
-          <!-- ...other items... -->
-        </ul>
+      <div class="d-flex align-items-center flex-column vh-100">
+        <div>
+          <a href="#" class="list-group-item list-group-item-action active mb-3"><img ngSrc="assets/home.svg" alt="home" height="24" width="24">Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action mb-3"><img ngSrc="assets/users.svg" alt="home" height="24" width="24">Accounts</a>
+          <a href="#" class="list-group-item list-group-item-action mb-3"><img ngSrc="assets/sync.svg" alt="home" height="24" width="24">Activities</a>
+        </div>
+
+        <div class="mt-auto"></div>
+
+        <div class="d-flex mb-5">
+          <img src="assets/john.png" class="rounded-circle me-2" alt="User Avatar" style="width: 48px; height: 48px;">
+          <div>
+            <h5 class="mb-0">John Smith</h5>
+            <p class="mb-0">Principal</p>
+          </div>
+        </div>
+        <div>
+          <a href="#" class="list-group-item list-group-item-action"><img ngSrc="assets/sign-out.svg" alt="home" height="24" width="24">
+            Sign Out</a>
+        </div>
       </div>
+
     </nav>
 
-    <!-- Page Content -->
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-
+    <div class="col-md-9 col-lg-10 card-row main-row">
       <!-- Cards for Charts -->
       <div class="row">
         <div class="col-lg-6">
-          <div class="card">
+          <div class="card no-border">
             <div class="card-body">
-              <h5 class="card-title">Cars per household in USA 2021</h5>
+              <h5 class="card-title mb-5">Cars per household in USA 2021</h5>
               <app-pie-chart />
             </div>
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="card">
+          <div class="card no-border">
             <div class="card-body">
-              <h5 class="card-title">Population of Alabama, Florida and California</h5>
+              <h5 class="card-title mb-5">Population of Alabama, Florida and California</h5>
               <app-multi-axis-line-chart />
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </div>
 </div>

@@ -65,6 +65,7 @@ export class MultiAxisLineChartComponent implements OnInit {
         datasets: datasets
       },
       options: {
+        responsive: true,
         scales: {
           y: {
             beginAtZero: true,
