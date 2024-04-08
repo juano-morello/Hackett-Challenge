@@ -57,7 +57,7 @@ export class MultiAxisLineChartComponent implements OnInit {
     }));
 
 
-    new Chart(ctx, { // ctx is now guaranteed not to be null
+    new Chart(ctx, {
       type: 'line',
       data: {
         labels: years,
